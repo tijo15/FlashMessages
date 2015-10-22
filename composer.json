@@ -1,0 +1,21 @@
+{
+    "name": "tijo15/FlashMessage",    
+    "type": "library",
+    "description": "Flashmessage module for anax mvc",
+    "keywords": ["Flashmessages"],
+    "homepage": "https://github.com/tijo15/flashmessages",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim J-H",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "anax/mvc": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "tijo15\\": "src/" }
+    }
+}
