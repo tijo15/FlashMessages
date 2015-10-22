@@ -1,5 +1,5 @@
 {
-    "name": "tijo15/FlashMessage",    
+    "name": "tijo15/flash-message",    
     "type": "library",
     "description": "Flashmessage module for anax mvc",
     "keywords": ["Flashmessages"],
