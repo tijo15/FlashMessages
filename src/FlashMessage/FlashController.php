@@ -1,6 +1,6 @@
 <?php
 
-namespace Anax\FlashMessage;
+namespace tijo15\FlashMessage;
  
 /**
  * A controller for users and admin related events.
@@ -18,7 +18,9 @@ class FlashController implements \Anax\DI\IInjectionAware
             $_SESSION['flashmsg'] = array();
         }
     }
-
+     public function testmsg(){
+    echo "Msg from FlashController";
+    }
     public function addMessage($message, $type){
         $msg = array('content' => $message, 'type' => $type);
         $_SESSION['flashmsg'][] = $msg;

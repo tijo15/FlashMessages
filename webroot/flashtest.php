@@ -10,19 +10,17 @@ require __DIR__.'/config.php';
 $di  = new \Anax\DI\CDIFactoryDefault();
 
 $di->setShared('flashMessages', function() use ($di){
-    $flashMessages = new \Anax\FlashMessage\FlashController($di);
+    $flashMessages = new tijo15\FlashMessage\FlashController($di);
     return $flashMessages;
 }); 
 
-
 $app = new \Anax\Kernel\CAnax($di);
-
 
 // Test Route
 $app->router->add('', function() use ($app) {
 
     $app->theme->setTitle("Testing flash");
-    $app->theme->addStylesheet('css/flash.css');    
+  //  $app->theme->addStylesheet('css/flash.css');    
     $app->flashMessages->addMessage('Godkänt!', 'success');
     $app->flashMessages->addMessage('Information', 'info');
     $app->flashMessages->addMessage('Varning!', 'warning');
