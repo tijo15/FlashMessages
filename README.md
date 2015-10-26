@@ -16,12 +16,15 @@ You can easily add your own messages but you have to specify the design for them
 2. To access the controller use this in your frontcontroller: 
 
 // Include the essential settings.
+
 require __DIR__.'/config.php'; 
 
 // Create services and inject into the app. 
+
 $di  = new \Anax\DI\CDIFactoryDefault();
 
 // Adds the Flash controller
+
 $di->setShared('flashMessages', function() use ($di){
     $flashMessages = new tijo15\FlashMessage\FlashController($di);
     return $flashMessages;
