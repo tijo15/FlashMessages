@@ -18,9 +18,7 @@ class FlashController implements \Anax\DI\IInjectionAware
             $_SESSION['flashmsg'] = array();
         }
     }
-     public function testmsg(){
-    echo "Msg from FlashController";
-    }
+   
     public function addMessage($message, $type){
         $msg = array('content' => $message, 'type' => $type);
         $_SESSION['flashmsg'][] = $msg;
@@ -35,15 +33,14 @@ class FlashController implements \Anax\DI\IInjectionAware
     }
     
     public function addInfoMsg($message){
-        $this->message('info', $message);
+        $this->addmessage('info', $message);
     }
     
     public function addWarningMsg($message){
-        $this ->message('warning', $message);
+        $this ->addmessage('warning', $message);
     }
     
-    public function getFlashMessages(){
-        
+    public function getFlashMessages(){ 
         $messages = $_SESSION['flashmsg'];
         $output = null;
         
