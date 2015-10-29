@@ -1,3 +1,7 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tijo15/flash-message/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tijo15/flash-message/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/tijo15/flash-message/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tijo15/flash-message/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/tijo15/flash-message/badges/build.png?b=master)](https://scrutinizer-ci.com/g/tijo15/flash-message/build-status/master)
+
 Flash messages
 =========
 
